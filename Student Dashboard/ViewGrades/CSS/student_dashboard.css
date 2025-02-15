@@ -1,0 +1,106 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cdd8b7;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #315900;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Quiz Summary Box */
+#quiz-summary {
+    background-color: #446b08;
+    color: white;
+    padding: 15px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    background-color: #d1d1d1;
+    height: 20px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+#progress-fill {
+    background-color: #ffd700;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+}
+
+/* Question Summary Section */
+#question-summary {
+    background-color: #f5f5dc;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* Question Summary Formatting */
+.question-container {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.question-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.choices-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.choices-list li {
+    padding: 8px;
+    border-radius: 5px;
+    margin: 3px 0;
+    background-color: #f0f0f0;
+}
+
+/* Answer Highlighting */
+.correct-answer {
+    background-color: #c8e6c9;
+    font-weight: bold;
+    color: green;
+}
+
+.wrong-answer {
+    background-color: #ffcdd2;
+    font-weight: bold;
+    color: red;
+}
+
+.highlight-correct {
+    background-color: #fff176;
+    font-weight: bold;
+}

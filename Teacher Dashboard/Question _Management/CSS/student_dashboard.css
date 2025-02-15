@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d2d7b8;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #2d4a00;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.quiz-inputs label, .settings label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.quiz-inputs input, .settings input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab.active {
+    text-decoration: underline;
+}
+
+.question-box {
+    background-color: #3d2a4a;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+}
+
+#answerOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.answer-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.answer-option input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.remove-option {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#addOption {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.settings {
+    margin-top: 15px;
+}
+
+#saveQuestion {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Added styles for Fill in the Blank toggle */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}

@@ -1,0 +1,80 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d2d7b8;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2d4a00;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+/* User Management Container */
+.user-management-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #b5c399;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* User Form */
+.user-form {
+    margin-bottom: 20px;
+}
+
+.user-form input, .user-form select {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #2d4a00;
+}
+
+.user-form button {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #2d4a00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.user-form button:hover {
+    background-color: #405d00;
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #2d4a00;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #2d4a00;
+    color: white;
+}

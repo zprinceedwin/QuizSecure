@@ -1,0 +1,179 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d2d7b8;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2d4a00;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+/* Dashboard */
+.dashboard-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-placeholder {
+    background-color: #2d4a00;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    margin: 0 auto 20px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* Quiz Dashboard */
+.quiz-dashboard {
+    background-color: #2d4a00;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* Tab Menu */
+.tab-menu {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab.active {
+    text-decoration: underline;
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Hide inactive sections */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Student Activity Logs */
+.real-time-logs {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.student-log-container {
+    display: none;
+    margin-top: 10px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.student-log-container.active {
+    display: block;
+}
+
+/* Student Names */
+.student-name {
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    padding: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    display: block;
+    margin-top: 5px;
+}
+
+.student-name:hover {
+    background-color: #bbb;
+}
+
+/* Action Logs */
+.action-log-container {
+    display: none;
+    background-color: #ffdddd;
+    padding: 10px;
+    margin-top: 5px;
+    border-left: 4px solid red;
+    border-radius: 5px;
+    font-size: 14px;
+    color: red;
+    max-width: 350px;
+    position: fixed;
+    right: 340px;
+    top: 80px;
+    height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.action-log-container.active {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .quiz-dashboard {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .tab-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab {
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .student-log-container, .action-log-container {
+        width: 90%;
+        right: 5%;
+        height: 50vh;
+    }
+}

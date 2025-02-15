@@ -1,0 +1,101 @@
+/* Keep global styles from previous pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d2d7b8;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2d4a00;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+/* Dashboard */
+.dashboard-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Paper Management Controls */
+.paper-controls {
+    margin: 20px 0;
+}
+
+.paper-controls input {
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #2d4a00;
+    border-radius: 5px;
+}
+
+.paper-controls button {
+    padding: 8px 15px;
+    background-color: #2d4a00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.paper-controls button:hover {
+    background-color: #1e3400;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #2d4a00;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #2d4a00;
+    color: white;
+}
+
+/* Operation Buttons */
+.operation-btn {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.modify-btn {
+    background-color: #e67e22;
+}
+
+.modify-btn:hover {
+    background-color: #d35400;
+}
+
+.add-btn {
+    background-color: #3498db;
+}
+
+.add-btn:hover {
+    background-color: #2980b9;
+}

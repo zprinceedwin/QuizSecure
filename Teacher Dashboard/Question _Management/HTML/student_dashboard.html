@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Management</title>
+    <link rel="stylesheet" href="../CSS/student_dashboard.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="../../Teacher_Interface/HTML/student_dashboard.html" class="nav-link">Teacher Dashboard</a>
+        <a href="../../User Management/HTML/student_dashboard.html" class="nav-link">User Management</a>
+        <a href="../../Paper_Management/HTML/student_dashboard.html" class="nav-link">Paper Management</a>
+        <a href="../HTML/student_dashboard.html" class="nav-link active">Question Management</a>
+        <a href="../../../Login/HTML/login.html" class="nav-link">Exit</a>
+    </nav>
+
+    <div class="container">
+        <h2>Create a New Quiz</h2>
+        <div class="quiz-inputs">
+            <label>Paper Name:</label>
+            <input type="text" id="paperName">
+            
+            <label>Code of the Paper:</label>
+            <input type="text" id="paperCode">
+        </div>
+
+        <div class="tab-menu">
+            <span class="tab active" id="multipleChoiceTab">Multiple Choice</span>
+            <span class="tab" id="fillInTheBlankTab">Fill in the Blank</span>
+        </div>
+
+        <!-- Multiple Choice Section -->
+        <div class="question-box" id="multipleChoiceSection">
+            <input type="text" id="mcQuestionInput" placeholder="Type question here">
+            
+            <div id="answerOptions">
+                <div class="answer-option">
+                    <input type="text" placeholder="Type Answer Option here">
+                    <input type="radio" name="correctAnswer">
+                    <button class="remove-option">✖</button>
+                </div>
+                <div class="answer-option">
+                    <input type="text" placeholder="Type Answer Option here">
+                    <input type="radio" name="correctAnswer">
+                    <button class="remove-option">✖</button>
+                </div>
+            </div>
+
+            <button id="addOption">Add Answer Option</button>
+        </div>
+
+        <!-- Fill in the Blank Section -->
+        <div class="question-box" id="fillInTheBlankSection" style="display: none;">
+            <input type="text" id="fitbQuestionInput" placeholder="Type question here">
+            
+            <label>Correct Answer:</label>
+            <input type="text" id="fitbAnswerInput" placeholder="Type correct answer here">
+
+            <!-- Toggle switch for ignoring accent marks -->
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="ignoreAccentToggle">
+                    <span class="slider"></span>
+                </label>
+                <span>Ignore accent marks</span>
+            </div>
+        </div>
+
+        <div class="settings">
+            <label>Points:</label>
+            <input type="number" id="points" min="1">
+
+            <label>Time Limit (minutes):</label>
+            <input type="number" id="timeLimit" min="1">
+        </div>
+
+        <button id="saveQuestion">Save Question</button>
+    </div>
+
+    <script src="../JavaScript/student_dashboard.js"></script>
+
+</body>
+</html>

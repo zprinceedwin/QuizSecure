@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="../CSS/student_dashboard.css">
+</head>
+<body>
+    <!-- Face Detection Overlay (Moved Outside of Question & Timer) -->
+    <div class="face-overlay">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+        <p id="face-status">Detecting face...</p>
+    </div>
+
+    <div class="quiz-container">
+        <div class="timer" id="timer">TIME: 00:00 (TEACHER CHOICES)</div>
+        <div class="question-overlay">
+            <p id="question-text">Question No. 1</p>
+            <div id="choices">
+                <label><input type="radio" name="answer"> Choice 1</label>
+                <label><input type="radio" name="answer"> Choice 2</label>
+                <label><input type="radio" name="answer"> Choice 3</label>
+                <label><input type="radio" name="answer"> Choice 4</label>
+            </div>
+            <button id="nextButton">Next</button>
+        </div>
+        <div class="quiz-summary">
+            <h3>QUIZ SUMMARY:</h3>
+            <ul id="summary-list"></ul>
+        </div>
+    </div>
+
+    <script src="../JavaScript/student_dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+</body>
+</html>

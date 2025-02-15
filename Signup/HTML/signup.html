@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - QuizSecure</title>
+    <link rel="stylesheet" href="../CSS/signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <button class="back-btn" onclick="goToLogin()">&#8592; Back</button>
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username">
+        <input type="password" id="signup-password" placeholder="Password">
+        <input type="password" id="signup-confirm-password" placeholder="Confirm Password">
+        
+        <select id="signup-role">
+            <option value="">Select Role</option>
+            <option value="admin">Administration</option>
+            <option value="professor">Professor</option>
+        </select>
+
+        <button onclick="signup()">Sign Up</button>
+    </div>
+    <script src="../JavaScript/signup.js"></script>
+</body>
+</html>

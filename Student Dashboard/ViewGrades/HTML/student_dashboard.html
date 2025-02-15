@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Grades</title>
+    <link rel="stylesheet" href="../CSS/student_dashboard.css">
+</head>
+<body>
+
+    <header>
+        <a href="../../student_interface/HTML/student_dashboard.html" id="dashboard-link">Student Dashboard</a>
+        <a href="../../../Login/HTML/login.html" id="exit-link">Exit</a>
+    </header>
+
+    <main>
+        <div id="quiz-summary">
+            <h2>QUIZ SUMMARY:</h2>
+            <p id="progress-text">0 out of 30</p>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </div>
+
+        <div id="question-summary">
+            <!-- Questions & Answers will be loaded dynamically here -->
+        </div>
+    </main>
+
+    <script src="../JavaScript/student_dashboard.js"></script>
+</body>
+</html>
